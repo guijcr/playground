@@ -12,13 +12,13 @@ from .. import constants
 from .. import utility
 
 
-class SimpleAgent(BaseAgent):
+class TestAgent(BaseAgent):
     """This is a baseline agent. After you can beat it, submit your agent to
     compete.
     """
 
     def __init__(self, *args, **kwargs):
-        super(SimpleAgent, self).__init__(*args, **kwargs)
+        super(TestAgent, self).__init__(*args, **kwargs)
 
         # Keep track of recently visited uninteresting positions so that we
         # don't keep visiting the same places.
@@ -40,21 +40,20 @@ class SimpleAgent(BaseAgent):
             return ret
 
         my_position = tuple(obs['position'])
-        board = np.array(obs['board'])  # A numpy array is a grid of values, all of the same type, and is indexed by a
-        # tuple of non negative integers. The number of dimensions is the rank of the array;
+        board = np.array(obs['board'])
         bombs = convert_bombs(np.array(obs['bomb_blast_strength']))
         enemies = [constants.Item(e) for e in obs['enemies']]
         ammo = int(obs['ammo'])
         blast_strength = int(obs['blast_strength'])
-        print("Passage: ")
-        print(board[0, 0])
+        # print("Agent position: " + my_position + " Board: " + board + " Bombs: " + bombs + " Enemies: " + enemies)
+        # print(" Ammo: " + ammo)
         items, dist, prev = self._djikstra(
             board, my_position, bombs, enemies, depth=10)
 
         # Move if we are in an unsafe place.
         unsafe_directions = self._directions_in_range_of_bomb(
             board, my_position, bombs, dist)
-        if unsafe_directions:
+        if unsafe_directions:  # if we are in an unsafe position we try to find a safe position and move to it
             directions = self._find_safe_directions(
                 board, my_position, unsafe_directions, bombs, enemies)
             return random.choice(directions).value
@@ -124,7 +123,7 @@ class SimpleAgent(BaseAgent):
             ]
 
         def out_of_range(p_1, p_2):
-            """Determines if two points are out of range of each other"""
+            '''Determines if two points are out of rang of each other'''
             x_1, y_1 = p_1
             x_2, y_2 = p_2
             return abs(y_2 - y_1) + abs(x_2 - x_1) > depth
@@ -173,7 +172,7 @@ class SimpleAgent(BaseAgent):
                         dist[new_position] = val
                         prev[new_position] = position
                         Q.put(new_position)
-                    elif val == dist[new_position] and random.random() < .5:
+                    elif (val == dist[new_position] and random.random() < .5):
                         dist[new_position] = val
                         prev[new_position] = position
 
@@ -217,7 +216,7 @@ class SimpleAgent(BaseAgent):
                     ret[constants.Action.Down] = max(ret[constants.Action.Down],
                                                      bomb['blast_strength'])
                 else:
-                    # Bomb is down.
+                    # Bomb is up.
                     ret[constants.Action.Up] = max(ret[constants.Action.Up],
                                                    bomb['blast_strength'])
         return ret
@@ -246,7 +245,7 @@ class SimpleAgent(BaseAgent):
                     is_stuck = False
                     break
 
-                for row, col in [(-1, 0), (1, 0), (0, -1), (0, 1)]:
+                for row, col in [(-1, 0), (1, 0), (0, -1), (0, 1)]:  # all the possible directions/movement for the agent at each iteration
                     new_position = (row + position_x, col + position_y)
                     if new_position in seen:
                         continue
@@ -254,8 +253,7 @@ class SimpleAgent(BaseAgent):
                     if not utility.position_on_board(next_board, new_position):
                         continue
 
-                    if not utility.position_is_passable(next_board,
-                                                        new_position, enemies):
+                    if not utility.position_is_passable(next_board, new_position, enemies):
                         continue
 
                     dist = abs(row + position_x - next_x) + abs(col + position_y - next_y)
