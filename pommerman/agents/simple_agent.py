@@ -5,7 +5,7 @@ from collections import defaultdict
 import queue
 import random
 
-import numpy as np
+import numpy as np  # fundamental package for scientific computing with python
 
 from . import BaseAgent
 from .. import constants
@@ -46,8 +46,8 @@ class SimpleAgent(BaseAgent):
         enemies = [constants.Item(e) for e in obs['enemies']]
         ammo = int(obs['ammo'])
         blast_strength = int(obs['blast_strength'])
-        print("Passage: ")
-        print(board[0, 0])
+        # print("Passage: ")
+        # print(board[0, 0])
         items, dist, prev = self._djikstra(
             board, my_position, bombs, enemies, depth=10)
 
@@ -111,7 +111,6 @@ class SimpleAgent(BaseAgent):
         self._recently_visited_positions.append(my_position)
         self._recently_visited_positions = self._recently_visited_positions[
                                            -self._recently_visited_length:]
-
         return random.choice(directions).value
 
     @staticmethod
@@ -447,3 +446,6 @@ class SimpleAgent(BaseAgent):
         if not ret:
             ret = directions
         return ret
+
+        #print("The value associated with dog is : ", end="")
+        #print(constants.Result.value)

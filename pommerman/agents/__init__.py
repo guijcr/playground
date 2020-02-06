@@ -6,6 +6,7 @@ from .player_agent import PlayerAgent
 from .player_agent_blocking import PlayerAgentBlocking
 from .random_agent import RandomAgent
 from .simple_agent import SimpleAgent
+from .my_agent import MyAgent
 from .tensorforce_agent import TensorForceAgent
 
 
