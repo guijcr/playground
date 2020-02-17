@@ -1,0 +1,406 @@
+   PommeFFACompetitionFast-v0 - ENVIRONMENT ------- MAX 400 STEPS  ------ 4 simple agents
+
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [3]}
+{'result': <Result.Win: 0>, 'winners': [3]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [3]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Win: 0>, 'winners': [1]}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [1]}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [3]}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [3]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [3]}
+{'result': <Result.Win: 0>, 'winners': [3]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [3]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [3]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [3]}
+{'result': <Result.Win: 0>, 'winners': [3]}
+{'result': <Result.Win: 0>, 'winners': [1]}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Win: 0>, 'winners': [1]}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Win: 0>, 'winners': [3]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [1]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Win: 0>, 'winners': [3]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [3]}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [1]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [1]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [1]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [1]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [3]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Win: 0>, 'winners': [1]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [3]}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Win: 0>, 'winners': [1]}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Win: 0>, 'winners': [3]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [1]}
+{'result': <Result.Win: 0>, 'winners': [1]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [3]}
+{'result': <Result.Win: 0>, 'winners': [3]}
+{'result': <Result.Win: 0>, 'winners': [1]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Win: 0>, 'winners': [3]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [1]}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Win: 0>, 'winners': [3]}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [1]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [1]}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Win: 0>, 'winners': [3]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [3]}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Win: 0>, 'winners': [3]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [3]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Win: 0>, 'winners': [3]}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Win: 0>, 'winners': [1]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [1]}
+{'result': <Result.Win: 0>, 'winners': [1]}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [3]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [3]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [1]}
+{'result': <Result.Win: 0>, 'winners': [1]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Win: 0>, 'winners': [1]}
+{'result': <Result.Win: 0>, 'winners': [3]}
+{'result': <Result.Win: 0>, 'winners': [3]}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Win: 0>, 'winners': [1]}
+{'result': <Result.Win: 0>, 'winners': [1]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [1]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Win: 0>, 'winners': [1]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [1]}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Win: 0>, 'winners': [1]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [1]}
+{'result': <Result.Win: 0>, 'winners': [3]}
+{'result': <Result.Win: 0>, 'winners': [1]}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Win: 0>, 'winners': [3]}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [1]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [3]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [3]}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Win: 0>, 'winners': [3]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [1]}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [1]}
+{'result': <Result.Win: 0>, 'winners': [3]}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [3]}
+{'result': <Result.Win: 0>, 'winners': [1]}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [3]}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [1]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [3]}
+{'result': <Result.Win: 0>, 'winners': [1]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [1]}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Win: 0>, 'winners': [3]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [1]}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [3]}
+{'result': <Result.Win: 0>, 'winners': [1]}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Win: 0>, 'winners': [1]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [1]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [1]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [3]}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [3]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [1]}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Win: 0>, 'winners': [3]}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Win: 0>, 'winners': [3]}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [3]}
+{'result': <Result.Win: 0>, 'winners': [1]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [1]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [2]}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Tie: 2>}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Win: 0>, 'winners': [0]}
+{'result': <Result.Win: 0>, 'winners': [2]}
+
+
+            PommeFFACompetitionFast-v0 - ENVIRONMENT ------- MAX 400 STEPS  ------ 3 simple agents 1 simple safe agent
