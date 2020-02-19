@@ -7,7 +7,7 @@ def main():
     """Simple function to bootstrap a game.
        Use this as an example to set up your training env.
     """
-    for x in range(3):
+    for x in range(400):
         # Print all possible environments in the Pommerman registry
         print(pommerman.REGISTRY)
 

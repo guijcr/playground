@@ -71,25 +71,25 @@ class MyAgent(BaseAgent):
                     for position in items.get(enemy, []):
                         if dist[position] == 1:
                             return constants.Action.Bomb.value
-                                                                                     ###  changed stuff until here only ###
+
         # Move towards an enemy if there is one in exactly three reachable spaces.
-        direction = self._near_enemy(my_position, items, dist, prev, enemies, 3)     ##1st agent tester - changed from 3 to 2
+        direction = self._near_enemy(my_position, items, dist, prev, enemies, 2)     ##CHANGED FROM 3 REACHABLE SPACES TO 2
         if direction is not None and (self._prev_direction != direction or
                                       random.random() < .5):
             self._prev_direction = direction
             return direction.value
 
         # Move towards a good item if there is one within two reachable spaces.
-        direction = self._near_good_powerup(my_position, items, dist, prev, 2)    ##
+        direction = self._near_good_powerup(my_position, items, dist, prev, 1)    ##CHANGED FROM 2 REACHABLE SPACES TO 1
         if direction is not None:
             return direction.value
 
         # Maybe lay a bomb if we are within a space of a wooden wall.
-        if self._near_wood(my_position, items, dist, prev, 1):                                  ##
-            if self._maybe_bomb(ammo, blast_strength, items, dist, my_position):
-                return constants.Action.Bomb.value
-            else:
-                return constants.Action.Stop.value
+        # if self._near_wood(my_position, items, dist, prev, 0):          ##CHANGED TO NEVER LAY BOMBS NEAR WOODEN WALLS UNLESS ADJACENT TO IT
+        #     if self._maybe_bomb(ammo, blast_strength, items, dist, my_position):
+        #         return constants.Action.Bomb.value
+        #     else:
+        #         return constants.Action.Stop.value
 
         # Move towards a wooden wall if there is one within two reachable spaces and you have a bomb.
         direction = self._near_wood(my_position, items, dist, prev, 2)
