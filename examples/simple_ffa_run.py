@@ -6,14 +6,14 @@ def main():
     """Simple function to bootstrap a game.
        Use this as an example to set up your training env.
     """
-    for x in range(220):
-        # Print all possible environments in the Pommerman registry
-        print(pommerman.REGISTRY)
-
+    for x in range(220):                                              # Code written by G. rodrigues - I added this line
+        # Print all possible environments in the Pommerman registry   # to be able to run several simulations in a row
+        print(pommerman.REGISTRY)                                     # by simply inserting the amount of times I want
+                                                                      # the simulation to run.
         # Create a set of agents (exactly four)
-        agent_list = [
-            agents.AgressiveAgent(),
-            agents.SupSafeAgent(),
+        agent_list = [                                                # Code modified by G. Rodrigues - I simply modified
+            agents.AgressiveAgent(),                                  # the agent list, by adding the agents I wanted to
+            agents.SupSafeAgent(),                                    # run in each simulation.
             agents.SimpleAgent(),
             agents.SimpleAgent()
             # agents.DockerAgent("pommerman/simple-agent", port=12345),
@@ -38,11 +38,11 @@ def main():
             with open('Rewards.txt', 'a') as file:              # Code written by Guilherme Rodrigues - 1644650
                 file.write(f'{reward}\n')                       # This code written from line 39 to line 45 it is
             # with open('outfile2.txt', 'a') as file:           # to print the results of each run in a text file
-            #     file.write(f'{state}\n')                      # called "Results" in the Examples folder
-            # with open('outfile3.txt', 'a') as file:
-            #     file.write(f'{done}\n')
+            #     file.write(f'{state}\n')                      # called "Results" in the Examples folder.
+            # with open('outfile3.txt', 'a') as file:           # In the file "Rewards" it is printed the reward given
+            #     file.write(f'{done}\n')                       # to each agent after each test.
             with open('Results.txt', 'a') as file:
-                file.write(f'{info}\n')                         # Code written by G. Rodrigues ends here
+                file.write(f'{info}\n')                         # Code written by G. Rodrigues ends here.
         env.close()
 
 

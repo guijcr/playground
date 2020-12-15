@@ -73,14 +73,14 @@ class AgressiveAgent(BaseAgent):
                             return constants.Action.Bomb.value
 
         # Move towards an enemy if there is one in exactly three reachable spaces.
-        direction = self._near_enemy(my_position, items, dist, prev, enemies, 4)  ##CHANGED FROM 3 TO 4
+        direction = self._near_enemy(my_position, items, dist, prev, enemies, 4)  ##CHANGED FROM 3 TO 4 - Code modified by G. Rodrigues
         if direction is not None and (self._prev_direction != direction or
                                       random.random() < .5):
             self._prev_direction = direction
             return direction.value
 
         # Move towards a good item if there is one within two reachable spaces.
-        direction = self._near_good_powerup(my_position, items, dist, prev, 3)  ##CHANGED FROM 2 TO 3
+        direction = self._near_good_powerup(my_position, items, dist, prev, 3)  ##CHANGED FROM 2 TO 3 - Code modified by G. Rodrigues
         if direction is not None:
             return direction.value
 

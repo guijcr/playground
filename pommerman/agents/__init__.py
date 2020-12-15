@@ -11,8 +11,6 @@ from .sup_aggressive_agent import SupAgressiveAgent
 from .safe_agent import SafeAgent
 from .aggressive_agent import AgressiveAgent
 from .sup_safe_agent import SupSafeAgent
-from .prune_action_test import SmartRandomAgent
-from .prune_action_test import SmartRandomAgentNoBomb
 
 
 class TestAgent(object):
