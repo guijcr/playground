@@ -6,8 +6,13 @@ from .player_agent import PlayerAgent
 from .player_agent_blocking import PlayerAgentBlocking
 from .random_agent import RandomAgent
 from .simple_agent import SimpleAgent
-from .my_agent import MyAgent
 from .tensorforce_agent import TensorForceAgent
+from .sup_aggressive_agent import SupAgressiveAgent
+from .safe_agent import SafeAgent
+from .aggressive_agent import AgressiveAgent
+from .sup_safe_agent import SupSafeAgent
+from .prune_action_test import SmartRandomAgent
+from .prune_action_test import SmartRandomAgentNoBomb
 
 
 class TestAgent(object):

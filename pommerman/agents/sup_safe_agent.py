@@ -9,9 +9,9 @@ from .. import constants
 from .. import utility
 
 
-class MyAgent(BaseAgent):
+class SupSafeAgent(BaseAgent):
     def __init__(self, *args, **kwargs):
-        super(MyAgent, self).__init__(*args, **kwargs)
+        super(SupSafeAgent, self).__init__(*args, **kwargs)
 
         # Keep track of recently visited uninteresting positions so that we
         # don't keep visiting the same places.
@@ -33,7 +33,8 @@ class MyAgent(BaseAgent):
             return ret
 
         my_position = tuple(obs['position'])
-        board = np.array(obs['board'])  # A numpy array is a grid of values, all of the same type, and is indexed by a tuple of non negative integers. The number of dimensions is the rank of the array;
+        board = np.array(obs[
+                             'board'])  # A numpy array is a grid of values, all of the same type, and is indexed by a tuple of non negative integers. The number of dimensions is the rank of the array;
         bombs = convert_bombs(np.array(obs['bomb_blast_strength']))
         enemies = [constants.Item(e) for e in obs['enemies']]
         ammo = int(obs['ammo'])
@@ -72,26 +73,26 @@ class MyAgent(BaseAgent):
                             return constants.Action.Bomb.value
 
         # Move towards an enemy if there is one in exactly three reachable spaces.
-        direction = self._near_enemy(my_position, items, dist, prev, enemies, 2)  ##CHANGED FROM 3 REACHABLE SPACES TO 2
+        direction = self._near_enemy(my_position, items, dist, prev, enemies, 2)  ##CHANGED FROM 3 TO 2
         if direction is not None and (self._prev_direction != direction or
                                       random.random() < .5):
             self._prev_direction = direction
             return direction.value
 
         # Move towards a good item if there is one within two reachable spaces.
-        direction = self._near_good_powerup(my_position, items, dist, prev, 1)  ##CHANGED FROM 2 REACHABLE SPACES TO 1
+        direction = self._near_good_powerup(my_position, items, dist, prev, 1)  ##CHANGED FROM 2 TO 1
         if direction is not None:
             return direction.value
 
         # Maybe lay a bomb if we are within a space of a wooden wall.
-        if self._near_wood(my_position, items, dist, prev, 1):  ##CHANGED TO NEVER LAY BOMBS NEAR WOODEN WALLS UNLESS ADJACENT TO IT
+        if self._near_wood(my_position, items, dist, prev, 1):
             if self._maybe_bomb(ammo, blast_strength, items, dist, my_position):
                 return constants.Action.Bomb.value
             else:
                 return constants.Action.Stop.value
 
         # Move towards a wooden wall if there is one within two reachable spaces and you have a bomb.
-        direction = self._near_wood(my_position, items, dist, prev, 2)
+        direction = self._near_wood(my_position, items, dist, prev, 1)     ##CHANGED FROM 2 TO 1
         if direction is not None:
             directions = self._filter_unsafe_directions(board, my_position,
                                                         [direction], bombs)
@@ -103,21 +104,20 @@ class MyAgent(BaseAgent):
             constants.Action.Stop, constants.Action.Left,
             constants.Action.Right, constants.Action.Up, constants.Action.Down,
         ]
-        #valid_directions = self._filter_invalid_directions(
-        #    board, my_position, directions, enemies)
-        #directions = self._filter_unsafe_directions(board, my_position,
-        #                                           valid_directions, bombs)
-        #directions = self._filter_recently_visited(
-        #    directions, my_position, self._recently_visited_positions)
-        #if len(directions) > 1:
-        #    directions = [k for k in directions if k != constants.Action.Stop]
-        #if not len(directions):
-        #    directions = [constants.Action.Stop]
+        valid_directions = self._filter_invalid_directions(
+            board, my_position, directions, enemies)
+        directions = self._filter_unsafe_directions(board, my_position, valid_directions, bombs)
+        directions = self._filter_recently_visited(
+            directions, my_position, self._recently_visited_positions)
+        if len(directions) > 1:
+            directions = [k for k in directions if k != constants.Action.Stop]
+        if not len(directions):
+            directions = [constants.Action.Stop]
 
         # Add this position to the recently visited uninteresting positions so we don't return immediately.
-        #self._recently_visited_positions.append(my_position)
-        #self._recently_visited_positions = self._recently_visited_positions[
-                                           #-self._recently_visited_length:]
+        self._recently_visited_positions.append(my_position)
+        self._recently_visited_positions = self._recently_visited_positions[
+                                           -self._recently_visited_length:]
 
         return random.choice(directions).value
 

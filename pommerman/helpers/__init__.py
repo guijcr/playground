@@ -13,7 +13,8 @@ def make_agent_from_string(agent_string, agent_id, docker_env_dict=None):
     
     agent_type, agent_control = agent_string.split("::")
 
-    assert agent_type in ["player", "playerblock", "simple", "random", "docker", "http", "test", "tensorforce", "test1"]
+    assert agent_type in ["player", "playerblock", "simple", "random", "docker", "http", "test", "tensorforce",
+                          "supaggressiveagent", "safeagent", "supsafeagent", "aggressiveagent"]
 
     agent_instance = None
 
@@ -25,8 +26,14 @@ def make_agent_from_string(agent_string, agent_id, docker_env_dict=None):
         agent_instance = agents.SimpleAgent()
     elif agent_type == "random":
         agent_instance = agents.RandomAgent()
-    elif agent_type == "test1":
-        agent_instance = agents.MyAgent()
+    elif agent_type == "supaggressiveagent":
+        agent_instance = agents.SupAgressiveAgent()
+    elif agent_type == "safeagent":
+        agent_instance = agents.SafeAgent()
+    elif agent_type == "supsafeagent":
+        agent_instance = agents.SupSafeAgent()
+    elif agent_type == "aggressiveagent":
+        agent_instance = agents.AgressiveAgent()
     elif agent_type == "docker":
         port = agent_id + 1000
         if not USE_GAME_SERVERS:
