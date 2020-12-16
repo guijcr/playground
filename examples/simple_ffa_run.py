@@ -37,12 +37,12 @@ def main():
             print('Episode {} finished'.format(i_episode))
             with open('Rewards.txt', 'a') as file:              # Code written by Guilherme Rodrigues - 1644650
                 file.write(f'{reward}\n')                       # This code written from line 39 to line 45 it is
-            # with open('outfile2.txt', 'a') as file:           # to print the results of each run in a text file
-            #     file.write(f'{state}\n')                      # called "Results" in the Examples folder.
-            # with open('outfile3.txt', 'a') as file:           # In the file "Rewards" it is printed the reward given
-            #     file.write(f'{done}\n')                       # to each agent after each test.
-            with open('Results.txt', 'a') as file:
-                file.write(f'{info}\n')                         # Code written by G. Rodrigues ends here.
+            # with open('outfile2.txt', 'a') as file:           to print the results of each run in a text file
+            #     file.write(f'{state}\n')                      called "Results" in the Examples folder.
+            # with open('outfile3.txt', 'a') as file:           In the file "Rewards" it is printed the reward given
+            #     file.write(f'{done}\n')                       to each agent after each test, in case coders want
+            with open('Results.txt', 'a') as file:              #to use those reward values.
+                file.write(f'{info}\n')                         # Code written by G. Rodrigues ends here
         env.close()
 
 
